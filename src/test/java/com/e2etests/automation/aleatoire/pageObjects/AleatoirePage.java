@@ -23,11 +23,10 @@ public class AleatoirePage extends BasePage {
 	public AleatoirePage() {
 		PageFactory.initElements(driver, this);
 		this.commonUtils = new CommonUtils();
-		System.out.println();
 	}
 
 	/* @FindBy */
-	@FindBy(how = How.XPATH, using = "//*[@id=\"centered_nav\"]/a[3]")
+	@FindBy(how = How.XPATH, using = "//*[@id='centered_nav']/a[3]")
 	public static WebElement btnAleatoir;
 
 	@FindBy(how = How.XPATH, using = "//*[@title='Facebook']")
@@ -47,7 +46,7 @@ public class AleatoirePage extends BasePage {
 //        properties.load(fis);
 //        properties.getProperty("home.url");
 //        return homeUrl;
-//    }
+//    }	
 	public void clickOnAleatoire() {
 		btnAleatoir.click();
 	}
