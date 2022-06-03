@@ -23,6 +23,7 @@ public class AleatoirePage extends BasePage {
 	public AleatoirePage() {
 		PageFactory.initElements(driver, this);
 		this.commonUtils = new CommonUtils();
+		System.out.println();
 	}
 
 	/* @FindBy */
